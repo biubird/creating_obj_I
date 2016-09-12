@@ -26,10 +26,10 @@ function VehicleConstructor(name, num_wheels, num_passengers){
         }
       }
     },
-    passenger_pickup: function(num){
+    passenger_pickup: function(new_passengers){
       if (vehicle.name === 'bus'){
-        bus.num_passengers += num;
-          return num;
+        bus.num_passengers += new_passengers;
+          return;
         }
       }
     }
@@ -49,8 +49,8 @@ var sedan = VehicleConstructor('sedan', '4', '4');
 console.log(sedan);
 sedan.make_noise();
 
-var bus = VehicleConstructor('bus', '6', '12');
+var bus = VehicleConstructor('bus', '6', 12);
 console.log(bus);
 bus.make_noise();
-bus.passenger_pickup(3);
+bus.passenger_pickup(10);
 console.log(bus.num_passengers);

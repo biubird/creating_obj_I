@@ -37,19 +37,19 @@ function VehicleConstructor(name, num_wheels, num_passengers){
   }
 
 
-var buick = VehicleConstructor('buick', '4', '1');
+var buick = VehicleConstructor('buick', 4, 1);
 console.log(buick);
 buick.make_noise();
 
-var bike = VehicleConstructor('bike', '2', '1');
+var bike = VehicleConstructor('bike', 2, 1);
 console.log(bike);
 bike.make_noise();
 
-var sedan = VehicleConstructor('sedan', '4', '4');
+var sedan = VehicleConstructor('sedan', 4, 4);
 console.log(sedan);
 sedan.make_noise();
 
-var bus = VehicleConstructor('bus', '6', 12);
+var bus = VehicleConstructor('bus', 6, 12);
 console.log(bus);
 bus.make_noise();
 bus.passenger_pickup(10);
